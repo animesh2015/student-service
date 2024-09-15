@@ -40,7 +40,6 @@ public class StudentController {
 		return studentService.updateStudent(id, student);
 	}
 
-
 	@DeleteMapping("/student/{id}")
 	public String deleteStudent(@PathVariable("id") Long id) {
 		return studentService.deleteStudent(id);
