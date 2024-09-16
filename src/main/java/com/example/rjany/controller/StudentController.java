@@ -16,7 +16,8 @@ import com.example.rjany.service.StudentService;
 
 @RestController
 public class StudentController {
-	
+
+
 	@Autowired
 	StudentService studentService;
 	
