@@ -17,32 +17,31 @@ import com.example.rjany.service.StudentService;
 @RestController
 public class StudentController {
 
+    @Autowired
+    StudentService studentService;
 
-	@Autowired
-	StudentService studentService;
-	
-	@PostMapping("/student")
-	public Student saveStudent(@RequestBody Student student) {
-		return studentService.saveStudent(student);
-	}
-	
-	@GetMapping("/student/{id}")
-	public Student getStudent(@PathVariable("id") Long id) {
-		return studentService.getStudentById(id);
-	}
-	
-	@GetMapping("/student")
-	public List<Student> getAllStudent(){
-	 	return studentService.getAllStudent();
-	}
-	
-	@PutMapping("/student/{id}")
-	public Student updateStudent(@PathVariable("id") Long id, @RequestBody Student student) {
-		return studentService.updateStudent(id, student);
-	}
+    @PostMapping("/student")
+    public Student saveStudent(@RequestBody Student student) {
+        return studentService.saveStudent(student);
+    }
 
-	@DeleteMapping("/student/{id}")
-	public String deleteStudent(@PathVariable("id") Long id) {
-		return studentService.deleteStudent(id);
-	}
+    @GetMapping("/student/{id}")
+    public Student getStudent(@PathVariable("id") Long id) {
+        return studentService.getStudentById(id);
+    }
+
+    @GetMapping("/student")
+    public List<Student> getAllStudent() {
+        return studentService.getAllStudent();
+    }
+
+    @PutMapping("/student/{id}")
+    public Student updateStudent(@PathVariable("id") Long id, @RequestBody Student student) {
+        return studentService.updateStudent(id, student);
+    }
+
+    @DeleteMapping("/student/{id}")
+    public String deleteStudent(@PathVariable("id") Long id) {
+        return studentService.deleteStudent(id);
+    }
 }
