@@ -11,3 +11,4 @@ class SpringEmbeddedH2DbApplicationTests {
 	}
 
 }
+//Test
