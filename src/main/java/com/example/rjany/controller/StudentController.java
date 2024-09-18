@@ -45,7 +45,7 @@ public class StudentController {
         return studentService.deleteStudent(id);
     }
 
-   /* public String deleteStudentSonar(Long id, String a, String b, String c, String d, String e, String f, String g, Integer m) {
-        return studentService.deleteStudent(id);
-    }*/
+   ////public String deleteStudentSonar(Long id, String a, String b, String c, String d, String e, String f, String g, Integer m) {
+    ////   return studentService.deleteStudent(id);
+    ////}
 }
