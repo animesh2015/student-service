@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class SpringEmbeddedH2DbApplication {
-
+//test
 	public static void main(String[] args) {
 		SpringApplication.run(SpringEmbeddedH2DbApplication.class, args);
 	}
