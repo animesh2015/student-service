@@ -25,6 +25,11 @@ public class StudentController {
         return studentService.saveStudent(student);
     }
 
+    @PostMapping("/student")
+    public String saveStudentTst() {
+        return "Deployment suceesfull.................";
+    }
+
     @GetMapping("/student/{id}")
     public Student getStudent(@PathVariable("id") Long id) {
         return studentService.getStudentById(id);
