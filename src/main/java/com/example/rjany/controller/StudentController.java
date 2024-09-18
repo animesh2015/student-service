@@ -27,7 +27,7 @@ public class StudentController {
 
     @GetMapping("/message")
     public String saveStudentTst() {
-        return "Deployment successfully.................";
+        return "Deployment successfully.............1....";
     }
 
     @GetMapping("/student/{id}")
@@ -50,7 +50,4 @@ public class StudentController {
         return studentService.deleteStudent(id);
     }
 
-    public String deleteStudentSonar(Long id, String a, String b, String c, String d, String e, String f, String g, Integer m) {
-        return studentService.deleteStudent(id);
-    }
 }
