@@ -25,9 +25,9 @@ public class StudentController {
         return studentService.saveStudent(student);
     }
 
-    @PostMapping("/student")
+    @GetMapping("/message")
     public String saveStudentTst() {
-        return "Deployment suceesfull.................";
+        return "Deployment successfully.................";
     }
 
     @GetMapping("/student/{id}")
