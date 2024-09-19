@@ -27,7 +27,7 @@ public class StudentController {
 
     @GetMapping("/message")
     public String saveStudentTst() {
-        return "Deployment successfully.............1....";
+        return "Deployment successfully.................";
     }
 
     @GetMapping("/student/{id}")
